@@ -1,108 +1,84 @@
 import { FiArrowRight } from "react-icons/fi";
-import trendyPlant from "../assets/trendyPlant.png";
+
+import trendyPlant from "../assets/plant1.png";
 import review4 from "../assets/review4.png";
 
 export default function Hero() {
   return (
-    <section className="relative">
+    <section className="hero">
 
-      {/* Main Content */}
-      <div className="relative z-10 max-w-[1280px] mx-auto px-6 lg:px-12 pt-20 pb-28">
+      <div className="container">
 
-        <div className="grid lg:grid-cols-2 items-center min-h-screen">
+        <div className="hero-wrapper">
 
-          {/* Left Side */}
-          <div>
+          <div className="hero-left-section">
 
-            <h1 className="text-[55px] md:text-[90px] leading-none font-semibold text-white">
+            <h1 className="hero-title">
               Earth’s Exhale
             </h1>
 
-            <p className="text-[#DADADA] mt-6 max-w-[520px] leading-8 text-lg">
-              "Earth Exhale" symbolizes the purity and vitality
-              of the Earth's natural environment and its
-              essential role in sustaining life.
+            <p className="hero-text">
+              Earth Exhale symbolizes the purity and vitality of the Earth's natural
+              environment and its essential role in sustaining life.
             </p>
 
-            {/* Buttons */}
-            <div className="flex items-center gap-5 mt-10">
+            <div className="hero-btns">
 
-              <button className="border border-[#DADADA] px-8 py-4 rounded-xl hover:bg-white hover:text-black transition duration-300">
+              <button className="primary-btn">
                 Buy Now
               </button>
 
-              <button className="flex items-center gap-4">
-                <div className="w-14 h-14 rounded-full border border-white flex items-center justify-center">
+              <div className="play-btn">
+
+                <div className="play-circle">
                   ▶
                 </div>
 
-                <span className="text-white">
-                  Live Demo...
-                </span>
-              </button>
+                <span>Live Demo...</span>
+
+              </div>
 
             </div>
 
-            {/* Review Card */}
-            <div className="mt-20 w-[320px] backdrop-blur-xl bg-[#ffffff10] border border-[#ffffff20] rounded-[35px] p-6">
+            <div className="glass-card review-card">
 
-              <div className="flex items-center gap-4">
+              <div className="review-top">
 
-                <img
-                  src={review4}
-                  alt=""
-                  className="w-14 h-14 rounded-full object-cover"
-                />
+                <img src={review4} alt="Reviewer Ron" />
 
                 <div>
-                  <h3 className="font-semibold text-lg">
-                    Ron
-                  </h3>
+                  <h3>Ron</h3>
 
-                  <div className="text-yellow-400">
-                    ★★★★★
-                  </div>
+                  <p>★★★★★</p>
                 </div>
 
               </div>
 
-              <p className="text-sm text-[#D5D5D5] mt-5 leading-7">
-                I can't express how thrilled I am with my new
-                natural plants! They bring such a fresh and
-                vibrant energy to my home.
+              <p className="review-text">
+                I can't express how thrilled I am with my new natural plants! They bring such a fresh and vibrant energy to my home.
               </p>
 
             </div>
 
           </div>
 
-          {/* Right Side */}
-          <div className="relative hidden lg:flex justify-end">
+          <div className="hero-right">
 
-            {/* Floating Product Card */}
-            <div className="w-[340px] backdrop-blur-2xl bg-[#ffffff10] border border-[#ffffff20] rounded-[40px] p-6">
+            <div className="glass-card floating-card">
 
-              <img
-                src={trendyPlant}
-                alt=""
-                className="w-[220px] mx-auto"
-              />
+              <img src={trendyPlant} alt="Trendy Aglaonema plant" />
 
-              <p className="text-[#DADADA] mt-5">
-                Indoor Plant
-              </p>
+              <p>Indoor Plant</p>
 
-              <div className="flex items-center justify-between mt-3">
+              <div className="flex items-center justify-between mt-4">
 
-                <h2 className="text-[34px] leading-[42px] font-medium">
-                  Aglaonema plant
-                </h2>
+                <h2>Aglaonema plant</h2>
 
-                <FiArrowRight className="text-2xl" />
+                <FiArrowRight size={28} />
 
               </div>
 
-              <button className="mt-8 border border-[#DADADA] px-8 py-4 rounded-xl hover:bg-white hover:text-black transition duration-300">
+              <button className="primary-btn mt-8">
                 Buy Now
               </button>
 

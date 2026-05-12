@@ -10,41 +10,49 @@ const testimonials = [
     image: review1,
     name: "Shelly Russel",
     review:
-      "Just got my hands on some absolutely awesome plants, and I couldn't be happier!",
+      "Just got my hands on some absolutely awesome plants, and I couldn’t be happier!",
   },
   {
     id: 2,
     image: review2,
     name: "Lula Rolfson",
     review:
-      "Each one has its own unique charm and personality.",
+      "Each one has its own unique charm and personality, and they’ve already started brightening up my space. The vibrant colors and fresh greenery make such a huge difference in my home.",
   },
   {
     id: 3,
     image: review3,
     name: "Carol Huels",
     review:
-      "It's like bringing a little piece of nature indoors.",
+      "It's like bringing a little piece of nature indoors. Definitely worth the investment—my plant collection has never looked better!",
   },
 ];
 
 export default function TestimonialsSection() {
   return (
-    <section className="max-w-[1280px] mx-auto px-6 lg:px-12 mt-36">
-      <h2 className="text-center text-5xl font-semibold mb-20">
-        Customer Review
-      </h2>
+    <section className="testimonial-section">
 
-      <div className="grid lg:grid-cols-3 gap-10">
-        {testimonials.map((item) => (
-          <TestimonialCard
-            key={item.id}
-            image={item.image}
-            name={item.name}
-            review={item.review}
-          />
-        ))}
+      <div className="container">
+
+        <h2 className="section-title">
+          Customer Review
+        </h2>
+
+        <div className="testimonial-grid">
+
+          {testimonials.map((item) => (
+            <TestimonialCard
+              key={item.id}
+              image={item.image}
+              name={item.name}
+              review={item.review}
+            />
+          ))}
+
+        </div>
+
       </div>
+
     </section>
   );
 }

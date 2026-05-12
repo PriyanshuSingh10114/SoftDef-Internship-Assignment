@@ -10,25 +10,33 @@ import heroBg from "./assets/hero.jpg";
 
 export default function App() {
   return (
-    <div className="bg-[#07130A] text-white overflow-hidden">
+    <div className="app">
 
-      {/* Top Background Section */}
+      {/* TOP SECTION */}
       <div
-        className="bg-cover bg-center bg-no-repeat relative"
+        className="top-section"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)), url(${heroBg})`,
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.7)), url(${heroBg})`,
         }}
       >
+
         <Navbar />
+
         <Hero />
+
         <TrendingPlants />
+
       </div>
 
-      {/* Other Sections */}
+      {/* OTHER SECTIONS */}
       <ProductGrid />
+
       <TestimonialsSection />
+
       <OxygenSection />
+
       <Footer />
+
     </div>
   );
 }

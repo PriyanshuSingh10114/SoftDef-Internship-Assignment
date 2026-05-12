@@ -5,72 +5,94 @@ import plant6 from "../assets/plant6.png";
 
 export default function TrendingPlants() {
   return (
-    <section className="max-w-[1280px] mx-auto px-6 lg:px-12 mt-24">
-      <h2 className="text-center text-4xl font-semibold mb-16">
-        Our Trendy plants
-      </h2>
+    <section className="trending">
 
-      <div className="space-y-10">
-        <div className="backdrop-blur-xl bg-[#ffffff10] border border-[#ffffff20] rounded-[60px] px-10 py-8 grid lg:grid-cols-2 items-center">
-          <div>
-            <img src={deskPlant} alt="" className="w-[350px]" />
-          </div>
+      <div className="container">
 
-          <div>
-            <h2 className="text-4xl font-semibold">
-              For Your Desks Decorations
-            </h2>
+        <h2 className="section-title">
+          Our Trendy plants
+        </h2>
 
-            <p className="mt-6 text-[#D0D0D0] leading-7">
-              Beautiful desk decoration plant for workspace.
-            </p>
+        <div className="trending-wrapper">
 
-            <h3 className="text-4xl mt-8 font-semibold">
-              Rs. 599/-
-            </h3>
+          {/* CARD 1 */}
+          <div className="glass-card trending-card">
 
-            <div className="flex items-center gap-5 mt-8">
-              <button className="border px-8 py-3 rounded-lg">
-                Explore
-              </button>
-
-              <button className="border p-4 rounded-lg">
-                <FiShoppingBag />
-              </button>
+            <div>
+              <img src={deskPlant} alt="Desk decoration plant" />
             </div>
+
+            <div className="trending-content">
+
+              <h2>
+                For Your Desks Decorations
+              </h2>
+
+              <p>
+                I recently added a beautiful desk decoration plant to my workspace, and it has made such a positive difference!
+              </p>
+
+              <h3 className="price">
+                Rs. 599/-
+              </h3>
+
+              <div className="card-btns">
+
+                <button className="primary-btn">
+                  Explore
+                </button>
+
+                <button className="icon-btn">
+                  <FiShoppingBag />
+                </button>
+
+              </div>
+
+            </div>
+
           </div>
+
+          {/* CARD 2 */}
+          <div className="glass-card trending-card">
+
+            <div className="trending-content">
+
+              <h2>
+                For Your Desks Decorations
+              </h2>
+
+              <p>
+                The greenery adds a touch of nature and serenity to my desk, making it feel more inviting and calming
+              </p>
+
+              <h3 className="price">
+                Rs. 399/-
+              </h3>
+
+              <div className="card-btns">
+
+                <button className="primary-btn">
+                  Explore
+                </button>
+
+                <button className="icon-btn">
+                  <FiShoppingBag />
+                </button>
+
+              </div>
+
+            </div>
+
+            <div className="flex justify-center">
+              <img src={plant6} alt="Trending indoor plant" />
+            </div>
+
+          </div>
+
         </div>
 
-        <div className="backdrop-blur-xl bg-[#ffffff10] border border-[#ffffff20] rounded-[60px] px-10 py-8 grid lg:grid-cols-2 items-center">
-          <div>
-            <h2 className="text-4xl font-semibold">
-              For Your Desks Decorations
-            </h2>
-
-            <p className="mt-6 text-[#D0D0D0] leading-7">
-              The greenery adds serenity to my desk.
-            </p>
-
-            <h3 className="text-4xl mt-8 font-semibold">
-              Rs. 399/-
-            </h3>
-
-            <div className="flex items-center gap-5 mt-8">
-              <button className="border px-8 py-3 rounded-lg">
-                Explore
-              </button>
-
-              <button className="border p-4 rounded-lg">
-                <FiShoppingBag />
-              </button>
-            </div>
-          </div>
-
-          <div className="flex justify-center">
-            <img src={plant6} alt="" className="w-[280px]" />
-          </div>
-        </div>
       </div>
+
     </section>
   );
 }

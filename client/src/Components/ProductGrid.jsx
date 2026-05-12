@@ -13,57 +13,68 @@ const products = [
     title: "Aglaonema plant",
     price: "300",
     image: plant1,
-    desc: "Chinese Evergreen plant.",
+    desc: "The Aglaonema plant, commonly known as Chinese Evergreen known for its attractive foliage and ease of care",
   },
   {
     id: 2,
     title: "Plantain Lilies",
     price: "380",
     image: plant2,
-    desc: "Decorative lush leaves.",
+    desc: "Hostas are primarily grown for their lush, decorative leaves, which come in a wide variety of shapes, sizes,",
   },
   {
     id: 3,
     title: "Cactus",
     price: "259",
     image: plant3,
-    desc: "Thrives in dry environments.",
+    desc: "It is known for their ability to thrive in arid environments",
   },
   {
     id: 4,
     title: "Swiss cheese Plant",
     price: "400",
     image: plant4,
-    desc: "Perforated tropical leaves.",
+    desc: "It is a popular tropical houseplant known for its distinctive, perforated leaves",
   },
   {
     id: 5,
     title: "Sansevieria plant",
     price: "450",
     image: plant5,
-    desc: "Low maintenance indoor plant.",
+    desc: "It is a popular indoor plant admired for its striking appearance and low-maintenance nature.",
   },
   {
     id: 6,
     title: "Agave plant",
     price: "359",
     image: plant6,
-    desc: "Architectural succulent plant.",
+    desc: "The Agave plant is a genus of succulent plants known for their striking rosette of thick, fleshy leaves and architectural forms.",
   },
 ];
 
-export default function ProductsGrid() {
+export default function ProductGrid() {
   return (
-    <section className="max-w-[1280px] mx-auto px-6 lg:px-12 mt-32">
-      <h2 className="text-center text-5xl font-semibold mb-20">
-        Our Top Selling Plants
-      </h2>
+    <section className="products-section">
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-        {products.map((item) => (
-          <ProductCard key={item.id} item={item} />
-        ))}
+      <div className="container">
+
+        <h2 className="section-title">
+          Our Top Selling Plants
+        </h2>
+
+        <div className="products-grid">
+
+          {products.map((item) => (
+            <ProductCard
+              key={item.id}
+              item={item}
+            />
+          ))}
+
+        </div>
+
       </div>
+
     </section>
   );
 }
