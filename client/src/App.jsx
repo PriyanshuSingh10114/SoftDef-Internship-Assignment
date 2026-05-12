@@ -12,21 +12,11 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-
-        {/* Trending Plants Section */}
         <TrendingPlants />
-
-        {/* Top Selling Plants */}
         <ProductsGrid />
-
-        {/* Customer Reviews */}
         <TestimonialsSection />
-
-        {/* O2 Plants Section */}
         <OxygenSection />
       </main>
-
-      {/* Footer */}
       <Footer />
     </div>
   );
